@@ -1,6 +1,6 @@
 <template>
 	<div class="flex m-3 bg-gray-300 rounded-xl">
-		<NuxtImg class="rounded-xl" :src="image" width="200" height="200" />
+		<NuxtImg class="rounded-xl" :src="image" width="200" height="200" :modifiers="grayScaleWhenDead" />
 		<div class="m-3">
 			<h3 class="text-xl mb-3">{{ name }}</h3>
 			<p>Status: {{ status }}</p>
@@ -36,4 +36,6 @@ const props = defineProps({
 		required: true,
 	},
 })
+
+const grayScaleWhenDead = computed(() => props.status === 'Dead' ? { grayscale: true } : undefined)
 </script>
