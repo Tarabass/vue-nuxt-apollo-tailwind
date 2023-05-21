@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/apollo', '@nuxtjs/tailwindcss'],
+	modules: ['@nuxtjs/apollo', '@nuxtjs/tailwindcss', '@nuxt/image-edge'],
 
 	apollo: {
 		clients: {
@@ -7,5 +7,9 @@ export default defineNuxtConfig({
 				httpEndpoint: 'https://rickandmortyapi.com/graphql',
 			},
 		},
+	},
+
+	image: {
+		domains: ['rickandmortyapi.com'],
 	},
 })
