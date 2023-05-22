@@ -1,21 +1,25 @@
 <template>
-	<div class="flex m-3 bg-gray-300 rounded-xl">
+	<figure
+		class="bg-gray-300 rounded-xl transition duration-300 ease-in-out hover:shadow-lg max-w-[300px]"
+	>
 		<NuxtLink :to="`/characters/${id}`">
-			<NuxtImg
-				class="rounded-xl"
-				:src="image"
-				width="200"
-				height="200"
-				:modifiers="grayScaleWhenDead"
-			/>
-			<div class="m-3">
+			<div
+				class="overflow-hidden bg-cover bg-no-repeat rounded-t-xl rounded-b-none"
+			>
+				<NuxtImg
+					class="transition duration-300 ease-in-out hover:scale-110"
+					:src="image"
+					:modifiers="grayScaleWhenDead"
+				/>
+			</div>
+			<figcaption class="m-3">
 				<h3 class="text-xl mb-3">{{ name }}</h3>
 				<p>Status: {{ status }}</p>
 				<p>Species: {{ species }}</p>
 				<p>Location: {{ location }}</p>
-			</div>
+			</figcaption>
 		</NuxtLink>
-	</div>
+	</figure>
 </template>
 <script lang="ts" setup>
 const props = defineProps({
