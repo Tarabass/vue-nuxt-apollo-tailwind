@@ -1,13 +1,62 @@
 <template>
-    <div>
-        <p>Locations</p>
-    </div>
+	<div class="grid grid-cols-5 gap-4 justify-items-center">
+		<div
+			v-for="{ id, name, type, dimension, residents, created } in data
+				.locations.results"
+			:key="id"
+		>
+			<p>{{ name }}</p>
+			<p>{{ type }}</p>
+			<p>{{ dimension }}</p>
+			<p>{{ created }}</p>
+			<div v-for="(resident, index) in residents" :key="index">
+				<p>{{ resident.id }}</p>
+				<p>{{ resident.name }}</p>
+			</div>
+		</div>
+	</div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+type LocationResults = {
+	locations: {
+		results: {
+			id: string
+			name: string
+			type: string
+			dimension: string
+			residents: {
+				id: string
+				name: string
+			}[]
+			created: string
+		}[]
+	}
+}
 
+const query = gql`
+	query getLocations {
+		locations {
+			info {
+				count
+				pages
+				next
+				prev
+			}
+			results {
+				id
+				name
+				type
+				dimension
+				residents {
+					id
+					name
+				}
+				created
+			}
+		}
+	}
+`
+
+const { data } = await useAsyncQuery<LocationResults>(query)
 </script>
-
-<style scoped>
-
-</style>

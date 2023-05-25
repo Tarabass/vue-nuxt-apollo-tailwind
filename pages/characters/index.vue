@@ -32,6 +32,12 @@ type CharacterResults = {
 
 const query = gql`
 	query getCharacters {
+		# info {
+		# 	count
+		# 	pages
+		# 	next
+		# 	prev
+		# }
 		characters {
 			results {
 				name
