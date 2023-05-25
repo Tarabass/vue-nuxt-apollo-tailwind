@@ -18,6 +18,12 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+	titleTemplate: (titleChunk) => {
+		return titleChunk ? `${titleChunk} - Locations` : 'Locations'
+	},
+})
+
 type LocationResults = {
 	locations: {
 		results: {

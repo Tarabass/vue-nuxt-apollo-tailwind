@@ -1,4 +1,9 @@
 export default defineNuxtConfig({
+	app: {
+		head: {
+			title: 'Rick and Morty',
+		},
+	},
 	modules: ['@nuxtjs/apollo', '@nuxtjs/tailwindcss', '@nuxt/image-edge'],
 
 	apollo: {
@@ -9,20 +14,18 @@ export default defineNuxtConfig({
 		},
 	},
 
-	tailwindcss: {
-
-	},
+	tailwindcss: {},
 
 	image: {
 		domains: ['rickandmortyapi.com'],
 	},
 
 	routeRules: {
-        '/': { redirect: '/characters' },
-    },
+		'/': { redirect: '/characters' },
+	},
 
 	// build: {
-		
+
 	// 	extend(config) {
 	// 		config.module.rules.push({
 	// 			// test: /\.(ogg|mp3|wav|mpe?g)$/i,

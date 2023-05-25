@@ -15,6 +15,12 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+	titleTemplate: (titleChunk) => {
+		return titleChunk ? `${titleChunk} - Characters` : 'Characters'
+	},
+})
+
 type CharacterResults = {
 	characters: {
 		results: {
@@ -52,6 +58,8 @@ const query = gql`
 		}
 	}
 `
+
+
 
 const { data } = await useAsyncQuery<CharacterResults>(query)
 </script>
