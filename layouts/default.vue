@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-48">
+	<div class="mx-4 xl:mx-48">
 		<TheHeader />
 		<TheMainContainer>
 			<slot />
