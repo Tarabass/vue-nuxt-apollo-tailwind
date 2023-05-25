@@ -12,7 +12,7 @@
 					:modifiers="grayScaleWhenDead"
 				/>
 			</div>
-			<figcaption class="m-3">
+			<figcaption class="m-3 text-sm text-gray-500">
 				<h3 class="text-xl mb-3">{{ name }}</h3>
 				<p>Status: {{ status }}</p>
 				<p>Species: {{ species }}</p>
