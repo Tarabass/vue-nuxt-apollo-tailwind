@@ -3,6 +3,7 @@ export default defineNuxtConfig({
 		head: {
 			title: 'Rick and Morty',
 		},
+		pageTransition: { name: 'page', mode: 'out-in' },
 	},
 	modules: ['@nuxtjs/apollo', '@nuxtjs/tailwindcss', '@nuxt/image-edge'],
 
