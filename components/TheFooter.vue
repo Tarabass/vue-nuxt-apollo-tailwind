@@ -1,11 +1,10 @@
 <template>
-	<footer class="text-center border-2 border-slate-100">
-		<div class="grid grid-flow-col auto-cols-max">
-			<h3 class="text-gray-800 opacity-50 font-bold text-3xl">
-				More from Rick and Morty
-			</h3>
-			<div class="_1M7RBDPg">
-				<!-- <a
+	<footer class="grid grid-flow-col auto-cols-max">
+		<h3 class="text-gray-800 opacity-50 font-bold text-3xl">
+			More from Rick and Morty
+		</h3>
+		<div class="_1M7RBDPg">
+			<!-- <a
 				class="_1N1yBYXv"
 				href="https://facebook.com/RickandMorty"
 				rel="noopener noreferrer"
@@ -78,7 +77,6 @@
 				data-link-type="OTHER"
 				>Shop Rick and Morty</a
 			> -->
-			</div>
 		</div>
 	</footer>
 </template>
