@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav class="text-center">
 		<ul class="inline-flex">
 			<TabsItem
 				v-for="tabItem in tabItems"
@@ -8,7 +8,7 @@
 			/>
 		</ul>
 	</nav>
-	<main class="my-3 ">
+	<main class="my-4">
 		<slot name="content" />
 	</main>
 </template>

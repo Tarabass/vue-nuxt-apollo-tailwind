@@ -1,5 +1,7 @@
 <template>
-	<div class="grid grid-cols-5 gap-4 justify-items-center">
+	<div
+		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 justify-items-center"
+	>
 		<CharacterCard
 			v-for="{ id, name, image, status, species, location } in data
 				.characters.results"
@@ -58,8 +60,6 @@ const query = gql`
 		}
 	}
 `
-
-
 
 const { data } = await useAsyncQuery<CharacterResults>(query)
 </script>
