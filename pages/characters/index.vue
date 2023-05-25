@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-5 gap-4 my-3 justify-items-center">
+	<div class="grid grid-cols-5 gap-4 justify-items-center">
 		<CharacterCard
 			v-for="{ id, name, image, status, species, location } in data
 				.characters.results"
