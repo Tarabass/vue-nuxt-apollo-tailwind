@@ -25,23 +25,6 @@ type CharacterResult = {
 	}
 }
 
-// const query = gql`
-// 	query getCharacter($id: ID! = ${route.params.id}) {
-//         character(id: $id) {
-//         name
-//         image
-//         status
-//         id
-//         species
-//         location {
-//             name
-//         }
-//         }
-//     }
-// `
-
-// const { data } = await useAsyncQuery<CharacterResult>(query)
-
 const query = gql`
 	query getCharacter($id: ID!) {
 		character(id: $id) {

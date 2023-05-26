@@ -1,6 +1,6 @@
 <template>
 	<figure
-		class="bg-gray-300 rounded-xl transition duration-300 ease-in-out hover:shadow-lg max-w-[300px]"
+		class="bg-neutral-100 rounded-xl transition duration-300 ease-in-out hover:shadow-lg max-w-[300px]"
 	>
 		<NuxtLink :to="`/characters/${id}`">
 			<div
@@ -12,7 +12,7 @@
 					:modifiers="grayScaleWhenDead"
 				/>
 			</div>
-			<figcaption class="m-3 text-sm text-gray-500">
+			<figcaption class="m-3 text-sm">
 				<h3 class="text-xl mb-3">{{ name }}</h3>
 				<p>Status: {{ status }}</p>
 				<p>Species: {{ species }}</p>
