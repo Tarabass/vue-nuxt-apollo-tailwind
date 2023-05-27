@@ -20,7 +20,7 @@ const route = useRoute()
 const isCurrent = route.query.page && +route.query.page === props.page
 const classObject = computed(() => ({
 	'bg-neutral-300 font-bold text-xl': isCurrent,
-	'pointer-events-none': props.isDisabled,
+	'pointer-events-none': props.isDisabled || isCurrent,
 }))
 const label = props.isPrevious ? 'Previous' : props.isNext ? 'Next' : props.page
 

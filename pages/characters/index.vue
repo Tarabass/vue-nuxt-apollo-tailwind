@@ -1,8 +1,8 @@
 <template>
 	<Pagination
 		:pages="data.characters.info.pages"
-		:previous="1"
-		:next="2"
+		:previous="data.characters.info.prev"
+		:next="data.characters.info.next"
 	></Pagination>
 	<div
 		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center"
