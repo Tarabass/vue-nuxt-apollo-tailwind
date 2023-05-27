@@ -17,7 +17,7 @@ const props = defineProps<{
 	isDisabled?: boolean
 }>()
 const route = useRoute()
-const isCurrent = route.query.page && +route.query.page === props.page
+const isCurrent = (route.query.page && +route.query.page || 1) === props.page
 const classObject = computed(() => ({
 	'bg-neutral-300 font-bold text-xl': isCurrent,
 	'pointer-events-none': props.isDisabled || isCurrent,

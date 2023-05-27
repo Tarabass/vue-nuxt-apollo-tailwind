@@ -44,7 +44,7 @@ const pagesToDisplay = computed(() => {
 	let start = route.query.page - props.size / 2
 	let end = start + props.size
 
-	if (start < 0) {
+	if (start < 0 || !route.query.page) {
 		start = 0
 		end = props.size
 	} else if (end > pagesArray.length) {
