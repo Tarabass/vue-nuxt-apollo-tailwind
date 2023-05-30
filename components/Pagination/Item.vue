@@ -1,7 +1,7 @@
 <template>
 	<li>
 		<a
-			class="rounded-full px-5 py-3 text-base transition-all duration-300 hover:bg-neutral-200 xl:text-lg"
+			class="rounded-full px-5 py-3 text-base transition-all duration-300 hover:bg-neutral-200 xl:text-xl"
 			:class="classObject"
 			:href="getHref()"
 			>{{ label }}</a
