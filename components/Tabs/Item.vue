@@ -1,6 +1,6 @@
 <template>
 	<li
-		class="px-1 py-1 sm:px-2 md:px-4 font-semibold text-gray-800 rounded-t opacity-50 text-base xl:text-lg"
+		class="rounded-t px-1 py-1 text-base font-semibold text-gray-800 opacity-50 sm:px-2 md:px-4 xl:text-lg"
 		:class="activeClasses"
 	>
 		<NuxtLink :to="to"> {{ label }} </NuxtLink>

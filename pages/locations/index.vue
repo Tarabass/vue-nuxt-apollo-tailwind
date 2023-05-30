@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-5 gap-4 justify-items-center">
+	<div class="grid grid-cols-5 justify-items-center gap-4">
 		<div
 			v-for="{ id, name, type, dimension, residents, created } in data
 				.locations.results"

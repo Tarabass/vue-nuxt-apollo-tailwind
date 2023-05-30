@@ -1,10 +1,10 @@
 <template>
 	<figure
-		class="bg-neutral-100 rounded-xl transition duration-300 ease-in-out hover:shadow-lg max-w-[300px]"
+		class="max-w-[300px] rounded-xl bg-neutral-100 transition duration-300 ease-in-out hover:shadow-lg"
 	>
 		<NuxtLink :to="`/characters/${id}`">
 			<div
-				class="overflow-hidden bg-cover bg-no-repeat rounded-t-xl rounded-b-none"
+				class="overflow-hidden rounded-b-none rounded-t-xl bg-cover bg-no-repeat"
 			>
 				<NuxtImg
 					class="transition duration-300 ease-in-out hover:scale-110"
@@ -13,7 +13,7 @@
 				/>
 			</div>
 			<figcaption class="m-3 text-sm">
-				<h3 class="text-xl mb-3">{{ name }}</h3>
+				<h3 class="mb-3 text-xl">{{ name }}</h3>
 				<p>Status: {{ status }}</p>
 				<p>Species: {{ species }}</p>
 				<p>Location: {{ location }}</p>

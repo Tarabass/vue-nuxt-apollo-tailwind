@@ -5,7 +5,7 @@
 		:next="data.characters.info.next"
 	></Pagination>
 	<div
-		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center"
+		class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5"
 	>
 		<CharacterCard
 			v-for="{ id, name, image, status, species, location } in data

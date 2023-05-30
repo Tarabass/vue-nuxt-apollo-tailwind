@@ -1,7 +1,7 @@
 <template>
 	<li>
 		<a
-			class="rounded-full px-5 py-3 transition-all duration-300 hover:bg-neutral-200"
+			class="rounded-full px-5 py-3 text-base transition-all duration-300 hover:bg-neutral-200 xl:text-lg"
 			:class="classObject"
 			:href="getHref()"
 			>{{ label }}</a
@@ -17,7 +17,7 @@ const props = defineProps<{
 	isDisabled?: boolean
 }>()
 const route = useRoute()
-const isCurrent = (route.query.page && +route.query.page || 1) === props.page
+const isCurrent = ((route.query.page && +route.query.page) || 1) === props.page
 const classObject = computed(() => ({
 	'bg-neutral-300 font-bold text-xl': isCurrent,
 	'pointer-events-none': props.isDisabled || isCurrent,

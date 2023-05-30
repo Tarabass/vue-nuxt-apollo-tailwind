@@ -1,6 +1,6 @@
 <template>
-	<nav aria-label="Page navigation example" class="border-0 text-center m-8">
-		<ul class="inline-flex items-center text-gray-800 opacity-50 text-md">
+	<nav aria-label="Page navigation example" class="m-8 border-0 text-center">
+		<ul class="text-md inline-flex items-center text-gray-800 opacity-50">
 			<!-- Previous button (disabled) -->
 			<PaginationItem
 				:page="previous"

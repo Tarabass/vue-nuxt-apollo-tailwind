@@ -1,6 +1,6 @@
 <template>
-	<footer class="grid grid-flow-col auto-cols-max">
-		<h3 class="text-gray-800 opacity-50 font-bold text-3xl">
+	<footer class="grid auto-cols-max grid-flow-col">
+		<h3 class="text-3xl font-bold text-gray-800 opacity-50">
 			More from Rick and Morty
 		</h3>
 		<div class="_1M7RBDPg">
