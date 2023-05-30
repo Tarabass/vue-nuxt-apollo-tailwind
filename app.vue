@@ -4,7 +4,7 @@
 	</NuxtLayout>
 </template>
 
-<style>
+<!-- <style>
 .page-enter-active,
 .page-leave-active {
 	transition: all 0.1s;
@@ -14,4 +14,4 @@
 	opacity: 0;
 	filter: blur(1rem);
 }
-</style>
+</style> -->
