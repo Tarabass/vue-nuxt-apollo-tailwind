@@ -35,8 +35,8 @@ const props = defineProps({
 	},
 	size: {
 		type: Number,
-		default: 15
-	}
+		default: 3,
+	},
 })
 const route = useRoute()
 const pagesToDisplay = computed(() => {
