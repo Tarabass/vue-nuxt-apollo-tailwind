@@ -1,6 +1,6 @@
 <template>
 	<figure
-		class="max-w-[300px] rounded-xl bg-neutral-100 transition duration-300 ease-in-out hover:shadow-lg"
+		class="rounded-xl bg-neutral-100 transition duration-300 ease-in-out hover:shadow-lg"
 	>
 		<NuxtLink :to="`/characters/${id}`">
 			<div
