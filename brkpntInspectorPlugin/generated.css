@@ -1,0 +1,38 @@
+/* this is the generated css */
+body::after {
+    content: "Current breakpoint default (< 640px)";
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    background: no-repeat 0.5rem center / 1.25rem url(https://tailwindcss.com/favicon-32x32.png), #edf2f7;
+    border: 1px solid #e2e8f0;
+    color: #d53f8c;
+    font-size: 0.875rem;
+    font-weight: 600;
+    z-index: 99999;
+  }
+  
+  @media (min-width: 640px) {
+    body::after {
+      content: "Current breakpoint sm";
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body::after {
+      content: "Current breakpoint md";
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body::after {
+      content: "Current breakpoint lg";
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    body::after {
+      content: "Current breakpoint xl";
+    }
+  }
