@@ -4,8 +4,8 @@
 		:previous="data.characters.info.prev"
 		:next="data.characters.info.next"
 	></Pagination>
-	<div
-		class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5"
+	<section
+		class="grid grid-cols-1 gap-4 justify-items-center sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5"
 	>
 		<CharacterCard
 			v-for="{ id, name, image, status, species, location } in data
@@ -18,7 +18,7 @@
 			:species="species"
 			:location="location.name"
 		/>
-	</div>
+	</section>
 </template>
 
 <script lang="ts" setup>
